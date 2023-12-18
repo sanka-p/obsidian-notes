@@ -1,0 +1,5 @@
+- Benefits
+	- Continous in memory (good cache locality if accessed sequentially)
+	- Very limited bookkeeping required (start address + size needed)
+- Limitations
+	- Fixed size
