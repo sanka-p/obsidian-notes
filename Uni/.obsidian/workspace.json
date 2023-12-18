@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "a77f3d8e9a7b743f",
+        "id": "65b195fbe05181f9",
         "type": "tabs",
         "children": [
           {
-            "id": "52b67c22718f60f0",
+            "id": "72088f70e6d5d5dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DSA/Data Structures/Linked Lists.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA/Data Structures/Linked Lists.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA/Data Structures/Linked Lists.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "DSA/Data Structures/Linked Lists.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,20 +138,40 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "df09cf3ba56e6dee",
+  "active": "72088f70e6d5d5dc",
   "lastOpenFiles": [
-    "DSA/Data Structures/Arrays.md",
-    "DSA/Data Structures/Linked Lists.md",
-    "DSA/Algorithms/Sorting/Insertion.md",
-    "DSA/Data Structures",
-    "DSA/Algorithms/Sorting/Bubble.md",
+    "DSA/Algorithms/DP/Maximum Subarray Sum.md",
+    "DSA/Algorithms/Recursion.md",
+    "DSA/Algorithms/Sorting/Merge.md",
+    "DSA/Algorithms/attachments/Pasted image 20231219010405.png",
+    "DSA/Algorithms/attachments",
+    "DSA/Algorithms/Introduction.md",
+    "DSA/Algorithms/Sorting/Bucket.md",
+    "DSA/Algorithms/Sorting/Quick.md",
+    "DSA/Algorithms/Sorting/attachments/Pasted image 20231219004100.png",
+    "DSA/Algorithms/Sorting/attachments",
+    "Vim/Text Manipulation.md",
+    "Vim/Search.md",
+    "Vim/Navigation.md",
+    "Vim",
+    "DSA/Algorithms/Searching/Binary Search.md",
+    "DSA/Algorithms/Recursion",
     "DSA/Algorithms/Sorting/Selection.md",
-    "DSA/Runtime Analysis.md",
+    "DSA/Algorithms/Sorting/Insertion.md",
+    "DSA/Algorithms/Sorting/Bubble.md",
+    "DSA/Algorithms/Searching/Linear Search.md",
+    "DSA/Data Structures/Stack.md",
+    "DSA/Data Structures/Queue.md",
     "DSA/attachments/Pasted image 20231218192759.png",
+    "DSA/Data Structures/Linked Lists.md",
+    "DSA/Algorithms/DP",
+    "DSA/Algorithms/Searching",
+    "DSA/Data Structures/Arrays.md",
+    "DSA/Data Structures",
+    "DSA/Algorithms/Runtime Analysis.md",
     "DSA/attachments",
     "DSA/Algorithms/Sorting",
     "DSA/Algorithms",
-    "Embedded/ATmega328P/ATMEGA328P Datasheet.pdf",
     "Embedded/ATmega328P/Timers.md",
     "Embedded/ATmega328P/PWM.md",
     "Embedded/ATmega328P/Interrupts.md",
@@ -169,20 +181,10 @@
     "Embedded/ATmega328P/attachments/Pasted image 20231217222551.png",
     "Embedded/ATmega328P/attachments/Pasted image 20231217222501.png",
     "Embedded/CO321 Papers/Mid-2021-Oct.md",
-    "Embedded/CO321 Papers/attachments/mid-2021-oct 1.c",
-    "Embedded/CO321 Papers/attachments/mid-2021-oct.c",
     "Embedded/CO321 Papers/attachments/Pasted image 20231217195515.png",
-    "Embedded/CO321 Papers/attachments",
     "Embedded/Mid Papers - CO321.md",
-    "Embedded/CO321 Papers",
     "Embedded/attachments/Pasted image 20231217195355.png",
-    "Embedded/attachments",
     "Embedded/ATmega328P/attachments/Pasted image 20231217195036.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20231217182837.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20231217182819.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20231217182248.png",
-    "Networking/Link Layer/VLAN.md",
-    "Networking/Link Layer/Link Layer.md",
-    "Networking/IP Model.md"
+    "Embedded/ATmega328P/attachments/Pasted image 20231217182837.png"
   ]
 }

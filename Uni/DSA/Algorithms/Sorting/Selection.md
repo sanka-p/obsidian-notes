@@ -11,7 +11,7 @@ ALGORITHM SelectionSort(A[1,...,n])
 	
 ```
 
-```c++
+```cpp
 void selection_sort(int arr[], int n) {
     for (int i = 0; i < n - 1; ++i) {
         // Find the minimum element in the unsorted part of the array

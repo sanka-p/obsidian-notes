@@ -1,0 +1,1 @@
+$O(n)$ since one comparison removes only one element
