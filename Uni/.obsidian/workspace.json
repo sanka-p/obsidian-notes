@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "65b195fbe05181f9",
+        "id": "388fc70673016c21",
         "type": "tabs",
         "children": [
           {
-            "id": "72088f70e6d5d5dc",
+            "id": "25c978e49c2e9516",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Math/Modular Arithmetic.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Math/Modular Arithmetic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Math/Modular Arithmetic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Math/Modular Arithmetic.md"
+              }
             }
           }
         ]
@@ -138,8 +146,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "72088f70e6d5d5dc",
+  "active": "25c978e49c2e9516",
   "lastOpenFiles": [
+    "Security/Cryptography/Multiplicative Cipher.md",
+    "Security/Cryptography/Modular Arithmetic][.md",
+    "Security/Cryptography/Additive Cipher.md",
+    "Math/Modular Arithmetic.md",
+    "Math",
+    "Security/Cryptography/Substitution Ciphers.md",
+    "Security/Cryptography/Traditional Ciphers.md",
+    "Security/Cryptography/Transposition Ciphers.md",
+    "Security/Cryptography/attachments/Pasted image 20231221221554.png",
+    "Security/Cryptography/attachments/Pasted image 20231221221547.png",
+    "Security/Cryptography/attachments/Pasted image 20231221221514.png",
+    "Security/Cryptography/attachments/Pasted image 20231221221501.png",
+    "Security/Cryptography/attachments",
+    "Security/Introduction.md",
+    "Security/Cryptography",
+    "Security",
+    "Electronics/Digital Logic/DTL.md",
+    "Electronics/Transistors/BJT.md",
+    "Electronics/Digital Logic/CMOS.md",
+    "Electronics/Transistors",
+    "Electronics/Oscillators",
+    "Electronics/Filters",
+    "Electronics/Untitled.md",
+    "Electronics/Digital Logic/ECL.md",
+    "Electronics/Digital Logic/TTL.md",
+    "Electronics/Digital Logic/RTL.md",
+    "Untitled.md",
+    "Electronics/Digital Logic",
+    "Electronics",
     "DSA/Algorithms/DP/Maximum Subarray Sum.md",
     "DSA/Algorithms/Recursion.md",
     "DSA/Algorithms/Sorting/Merge.md",
@@ -149,42 +186,13 @@
     "DSA/Algorithms/Sorting/Bucket.md",
     "DSA/Algorithms/Sorting/Quick.md",
     "DSA/Algorithms/Sorting/attachments/Pasted image 20231219004100.png",
-    "DSA/Algorithms/Sorting/attachments",
     "Vim/Text Manipulation.md",
     "Vim/Search.md",
     "Vim/Navigation.md",
-    "Vim",
     "DSA/Algorithms/Searching/Binary Search.md",
-    "DSA/Algorithms/Recursion",
-    "DSA/Algorithms/Sorting/Selection.md",
-    "DSA/Algorithms/Sorting/Insertion.md",
-    "DSA/Algorithms/Sorting/Bubble.md",
-    "DSA/Algorithms/Searching/Linear Search.md",
-    "DSA/Data Structures/Stack.md",
-    "DSA/Data Structures/Queue.md",
     "DSA/attachments/Pasted image 20231218192759.png",
-    "DSA/Data Structures/Linked Lists.md",
-    "DSA/Algorithms/DP",
-    "DSA/Algorithms/Searching",
-    "DSA/Data Structures/Arrays.md",
-    "DSA/Data Structures",
-    "DSA/Algorithms/Runtime Analysis.md",
-    "DSA/attachments",
-    "DSA/Algorithms/Sorting",
-    "DSA/Algorithms",
-    "Embedded/ATmega328P/Timers.md",
-    "Embedded/ATmega328P/PWM.md",
-    "Embedded/ATmega328P/Interrupts.md",
     "Embedded/ATmega328P/attachments/Pasted image 20231218093256.png",
-    "Embedded/ATmega328P/ATmega328P.md",
-    "Embedded/Microcontrollers.md",
     "Embedded/ATmega328P/attachments/Pasted image 20231217222551.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20231217222501.png",
-    "Embedded/CO321 Papers/Mid-2021-Oct.md",
-    "Embedded/CO321 Papers/attachments/Pasted image 20231217195515.png",
-    "Embedded/Mid Papers - CO321.md",
-    "Embedded/attachments/Pasted image 20231217195355.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20231217195036.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20231217182837.png"
+    "Embedded/ATmega328P/attachments/Pasted image 20231217222501.png"
   ]
 }

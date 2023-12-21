@@ -1,0 +1,5 @@
+- Maps one symbol with another
+	- Monoalphabetic - mapping is one to one
+		- [[Additive Cipher]]
+		- [[Multiplicative Cipher]]
+	- 

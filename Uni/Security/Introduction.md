@@ -1,0 +1,42 @@
+- Network security is the protection of information, and systems and ahrdware that use store and transmit that information
+- CIA
+	- Confidentiality - Can be read and understood only by the intended parties/legal recipients
+		- Threats
+			- Passive
+				- Snooping
+				- Traffic Analysis
+		- Services
+			- Encipherment
+			- Routing Control
+	- Integrity - correctness/completeness
+		- Threats
+			- Active
+				- Modification
+				- Masquerading - impersonation
+				- Replaying
+				- Requdiation - denying that the message was sent/received by the sender/receiver
+					- Proof of origin
+					- Proof of delivery
+		- Services
+			- Anti change
+			- Anti replay
+			- Digital Signature
+	- Availability - available to the intended parties with minimal delay
+		- Threats
+			- Active
+			- Denial of Service
+	- Additionally
+		- Authentication
+		- Non repudiation
+			- Services
+				- Notarization
+- Cybercrime-as-a-service Model
+	- Access as a service (AaaS) provides access to stolen account credentials and systems through remote access using remote desktop protocol (RDP) or VPNs.
+	- Malware distribution as a service facilitates deployment of various types of malware in certain regions. This is made possible using vulnerability exploits, AaaS and attacks like the watering-hole attack (infect targeted users by injecting malicious code into websites/services they frequently visit).
+	- Phishing as a service provides tools/services to create cloned websites, phishing emails that bypass the spam filters.
+	- OPSEC as a service provides operational security (a security and risk management process on sensitive information) to attackers to minimize detection and ability to be traced back to the source.
+	- Crypting as a service provides encryption for malware so it can bypass detection.
+	- Scamming as a service provides the necessary tools and platforms (emails, fake websites) to perform scams.
+	- Vishing (voice phishing) as a service provides a voice system with AI integrations to trick individuals into providing sensitive information over a telephone service.
+	- Spamming as a service provides bulk spamming through SMS or email. Some providers offer the entire infrastructure required such as the mail server and botnet (a network of devices which are infected without the owners’ knowledge).
+	- Scanning as a service provides cheap access to commercially available tools in order to find and exploit vulnerabilities.
