@@ -1,8 +1,25 @@
+![[Pasted image 20231222011507.png]]
+
+Properties of Block Ciphers
+ - Confusion - Each plaintext symbol has a obscure relation with a symbol in the ciphertext. Confusion hides the relationship between the ciphertext and the key.
+ - Diffusion - One symbol change in the plaintext changes more than one symbol in the ciphertext. Diffusion hides the relationship between the ciphertext and the plaintext.
+
 ### Traditional Symmetric Key Ciphers
 
 Two Types
 - [[Substitution Ciphers]]
 - [[Transposition Ciphers]]
+
+Stream Ciphers
+ - Additive
+ - Multiplicative
+ - Affine
+ - Vigenere
+Block ciphers
+![[Pasted image 20231222004928.png]]
+- playfair
+- hill
+- 
 
 If $P$ is the plaintext, $C$ is the ciphertext, and $K$ is the key
 Encryption: $C = E_k(P)$

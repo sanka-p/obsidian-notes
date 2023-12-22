@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math/Modular Arithmetic.md",
+                "file": "Security/Cryptography/Traditional Ciphers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "76541fe8ff037ef7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Security/Cryptography/DES.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Math/Modular Arithmetic.md",
+                "file": "Security/Cryptography/DES.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Math/Modular Arithmetic.md",
+                "file": "Security/Cryptography/DES.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Math/Modular Arithmetic.md"
+                "file": "Security/Cryptography/DES.md"
               }
             }
           }
@@ -146,22 +159,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "25c978e49c2e9516",
+  "active": "76541fe8ff037ef7",
   "lastOpenFiles": [
+    "Security/Introduction.md",
+    "Security/Cryptography/Transposition Ciphers.md",
+    "Security/attachments/WhatsApp Image 2023-12-22 at 7.36.50 AM.jpeg",
+    "Security/attachments",
+    "Untitled.canvas",
+    "Security/Cryptography/DES.md",
+    "Security/Cryptography/Modern Ciphers.md",
+    "Security/Cryptography/Vigenere Cipher.md",
+    "Security/Cryptography/Traditional Ciphers.md",
+    "Security/Cryptography/Substitution Ciphers.md",
+    "Security/Cryptography/Stream Ciphers.md",
+    "Security/Cryptography/Playfair Cipher.md",
     "Security/Cryptography/Multiplicative Cipher.md",
-    "Security/Cryptography/Modular Arithmetic][.md",
+    "Security/Cryptography/Block Ciphers.md",
+    "Security/Cryptography/Autokey Cipher.md",
+    "Security/Cryptography/Affine Cipher.md",
     "Security/Cryptography/Additive Cipher.md",
     "Math/Modular Arithmetic.md",
+    "Security/Cryptography/attachments/Pasted image 20231222094600.png",
+    "Security/Cryptography/attachments/Pasted image 20231222094219.png",
+    "Security/Cryptography/attachments/Pasted image 20231222094213.png",
+    "Security/Cryptography/attachments/Pasted image 20231222094202.png",
+    "Security/Cryptography/attachments/Pasted image 20231222094112.png",
+    "Security/Cryptography/attachments/Pasted image 20231222094105.png",
+    "Security/Cryptography/attachments/Pasted image 20231222094053.png",
+    "Security/Cryptography/attachments/Pasted image 20231222094037.png",
+    "Security/Cryptography/attachments/Pasted image 20231222061142.png",
+    "Untitled",
+    "Security/Cryptography/Modular Arithmetic][.md",
     "Math",
-    "Security/Cryptography/Substitution Ciphers.md",
-    "Security/Cryptography/Traditional Ciphers.md",
-    "Security/Cryptography/Transposition Ciphers.md",
-    "Security/Cryptography/attachments/Pasted image 20231221221554.png",
-    "Security/Cryptography/attachments/Pasted image 20231221221547.png",
-    "Security/Cryptography/attachments/Pasted image 20231221221514.png",
-    "Security/Cryptography/attachments/Pasted image 20231221221501.png",
     "Security/Cryptography/attachments",
-    "Security/Introduction.md",
     "Security/Cryptography",
     "Security",
     "Electronics/Digital Logic/DTL.md",
@@ -176,23 +206,6 @@
     "Electronics/Digital Logic/RTL.md",
     "Untitled.md",
     "Electronics/Digital Logic",
-    "Electronics",
-    "DSA/Algorithms/DP/Maximum Subarray Sum.md",
-    "DSA/Algorithms/Recursion.md",
-    "DSA/Algorithms/Sorting/Merge.md",
-    "DSA/Algorithms/attachments/Pasted image 20231219010405.png",
-    "DSA/Algorithms/attachments",
-    "DSA/Algorithms/Introduction.md",
-    "DSA/Algorithms/Sorting/Bucket.md",
-    "DSA/Algorithms/Sorting/Quick.md",
-    "DSA/Algorithms/Sorting/attachments/Pasted image 20231219004100.png",
-    "Vim/Text Manipulation.md",
-    "Vim/Search.md",
-    "Vim/Navigation.md",
-    "DSA/Algorithms/Searching/Binary Search.md",
-    "DSA/attachments/Pasted image 20231218192759.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20231218093256.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20231217222551.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20231217222501.png"
+    "DSA/Algorithms/DP/Maximum Subarray Sum.md"
   ]
 }
