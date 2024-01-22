@@ -4,93 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "388fc70673016c21",
+        "id": "98a15624f661dcfd",
         "type": "tabs",
         "children": [
           {
-            "id": "25c978e49c2e9516",
+            "id": "3e1e10e0e81e8693",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security/Cryptography/Traditional Ciphers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "76541fe8ff037ef7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Embedded/ATmega328P/Timers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7bdb4fe8e5fe7347",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networking/Link Layer.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "56873b3b9b220587",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Embedded/ATmega328P/Serial.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "493ab6b1c6af2103",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Embedded/ATmega328P/Serial.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "10c6877aa006a978",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Embedded/ATmega328P/attachments/Pasted image 20231217222551.png"
-              }
-            }
-          },
-          {
-            "id": "c0cc42810f49a1e0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web Dev/RPC (Remote Procedure Call).md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -140,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1f8cc6171a14ba74",
@@ -156,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Embedded/ATmega328P/Serial.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Embedded/ATmega328P/Serial.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -195,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Embedded/ATmega328P/Serial.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -217,41 +139,42 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "493ab6b1c6af2103",
+  "active": "3e1e10e0e81e8693",
   "lastOpenFiles": [
-    "Embedded/ATmega328P/EEPROM (Electrically Erasable Read-Only Memory).md",
+    "Web Dev/RPC (Remote Procedure Call).md",
+    "Networking/Transport Layer.md",
+    "Networking/attachments/Pasted image 20240121215031.png",
+    "Networking/attachments/Pasted image 20240121214537.png",
+    "Networking/attachments/Pasted image 20240121212325.png",
+    "Networking/attachments/Pasted image 20240121204542.png",
+    "Networking/attachments/Pasted image 20240121204528.png",
+    "Networking/attachments/Pasted image 20240121204247.png",
+    "Networking/attachments/Pasted image 20240121204157.png",
+    "Networking/attachments/Pasted image 20240121203916.png",
+    "Networking/attachments/Pasted image 20240121203835.png",
+    "Networking/attachments/Pasted image 20240121203231.png",
+    "Networking/Untitled.md",
+    "Networking/Link Layer.md",
     "Embedded/ATmega328P/Serial.md",
-    "Embedded/ATmega328P/attachments/Pasted image 20231217222551.png",
+    "Embedded/ATmega328P/EEPROM (Electrically Erasable Read-Only Memory).md",
     "Embedded/ATmega328P/ATmega328P.md",
     "Embedded/ATmega328P/PWM.md",
     "Embedded/ATmega328P/Interrupts.md",
     "Embedded/ATmega328P/ADC.md",
-    "Embedded/ATmega328P/attachments/Pasted image 20240117102848.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20240117102828.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20240117102657.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20240117100750.png",
     "Embedded/ATmega328P/Untitled.md",
     "Product Specs/Wheel Attachment.md",
     "Product Specs",
-    "Embedded/ATmega328P/attachments/Pasted image 20240117004411.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20240117004405.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20240117003507.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20240117003455.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20240117003444.png",
     "Electronics/Filters/Butterworth Function.md",
     "Electronics/Filters/Low Pass Filters.md",
     "Electronics/Filters/Introduction.md",
     "Electronics/Filters/attachments",
     "Web Dev/temp.md",
     "Electronics/Filters",
-    "Web Dev/RPC (Remote Procedure Call).md",
     "Networking/co323 mid.md",
-    "Networking/Link Layer.md",
     "Untitled",
     "Networking/Data Link Layer.md",
     "Networking/IP Model.md",
     "Networking/Physical Layer.md",
-    "Networking/Transport Layer.md",
     "Networking/Socket Programming.md",
     "Networking/attachments",
     "Networking/Link Layer/VLAN.md",
@@ -261,7 +184,6 @@
     "Guides/Docker",
     "Guides",
     "Security/Introduction.md",
-    "Security/Cryptography/Transposition Ciphers.md",
     "Security/attachments",
     "Untitled.canvas",
     "Math"
