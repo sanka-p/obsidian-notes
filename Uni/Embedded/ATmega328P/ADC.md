@@ -48,3 +48,29 @@ Steps for using ADC
 6. Wait for conversion to finish by polling the ADIF bit
 7. Read ADCL and ADCH registers
 8. Repeat from step 5 or 4 depending on the channel or references
+
+Example:
+Write a c program to configure the ADC as follows:
+source = ADC1
+AVcc = 5v
+Left Align
+Disable Auto trigger
+Disable Interrupt
+Prescaler = 2
+```c
+void setupADC(){
+	ADCMUX |= (1<<ADLAR);
+	ADCMUX |= (1<<REFS0);
+	ADSCRA |= (1<<ADEN);
+	ADCSRA &= ~(1<<ADIE);
+	ADCSRA &= ~(1<<ADSC);
+}
+
+int main(){
+	// start conversion
+	ADCSRA |= (1<<ADSC);
+	// wait until the conversion completes
+	while (ADCSRA & (1 << ADSC)) ;
+	result = ADCH;
+}
+```

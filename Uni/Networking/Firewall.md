@@ -1,0 +1,1 @@
+Security level of an iterface - define how much you trust traffic from that interface 0 being least trusted and 100 being most trusted
