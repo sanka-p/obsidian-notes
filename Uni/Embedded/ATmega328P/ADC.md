@@ -1,8 +1,64 @@
+![[Pasted image 20240211120405.png]]
+Data Acquisition occurs in 5 stages
+1. Transducer - Converts physical variables into measurable electrical signals
+2. Signal Conditioning - Removes external noise and smoothens the analog signal
+3. Multiplexer - Analog inputs can come from multiple channels but the ADC can perform conversions only on one channel at a time
+4. Amplifier - Used to amplify the input signal if it is too small
+5. ADC - Converts the analog signal to a digital signal
+
 Transducer/Sensor - Converts a physical quantity to electrical signal
+Two steps in A to D conversion
+1. Sampling - extract signal usually at regularly spaced time instants (sampling period)
+2. Quantisation - quantize the samples to discrete levels
+![[Pasted image 20240211121817.png]]
+
+Sampling theorem
+	An analogue signal x(f) with frequencies of no more than Fmax (here we say maximum frequency because the wave can be a summation of multiple frequencies) can be reconstructed exactly from its samples if the sampling rate satisfies
+	$$F_s \ge 2.F_{max}$$
+	If maximum frequency of the signal is Fmax, the sampling rate should be atleast
+	Nyquist rate = 2 x Fmax
+	If the sampling rate if Fs, the maximum frequency in the signal must not exceed
+	Nyquist Frequency = 0.5Fs
+
+Consider an n bit ADC
+$$d=floor(\frac{V_{in}-V{min}}{step\;size})$$
+
+Quantisation error is the average difference between the analogue input and the quantised value. The quantisation error of an ideal ADC is half of the step size
+
+FLASH ADC
+![[Pasted image 20240211122429.png]]
+Fast because all comparators work parallelly
+Bust cost a lot dues to complex circuitry
+
+SUCCESSIVE APPROXIMATION ADC
+![[Pasted image 20240211122734.png]]
+![[Pasted image 20240211122945.png]]
+Sequence for binary search
+example 3 bit ADC
+start from MSB
+if comparator outputs 1, leave as it is and go to next bit
+if comparator outputs 0, set to 0 and go to next bit
+repeat for all bits upto LSB
+
+Errors in ADC
+Gain Error
+Offset Error
+INL (Integral Nonlinearity)
+![[Pasted image 20240211220249.png]]
+Difference between actual and measured value
+DNL (Differential Nonlinearity)
+![[Pasted image 20240211215600.png]]
+Variable step sizes. In an ideal ADC, DNL should be 1LSB
+The maximum DNL
+
+To reduce the error, the quantized signal is shifted 0.5LSB to the left
+![[Pasted image 20240211215300.png]]
+![[Pasted image 20240211215209.png]]
+
 ADC - Converts analog/continous electrical signals to binary/discrete values
  - Resolution - Expressed by the bitsize (n) of output. This value is fixed at design.
  - Step Size - It is smallest change in the signal that is sensed by the ADC.
-	 - $Step\;Size = \frac{V_{ref}}{2^n}$
+	 - $Step\;Size = \frac{V_{ref}-V{min}}{2^n}$
  - Conversion time - Time it takes the ADC to convert the analog input to a digital values. It depends on
 	 - Clock source
 	 - Data conversion method
@@ -48,6 +104,26 @@ Steps for using ADC
 6. Wait for conversion to finish by polling the ADIF bit
 7. Read ADCL and ADCH registers
 8. Repeat from step 5 or 4 depending on the channel or references
+
+Which one to choose left or right align??
+1. **Right Alignment:**
+    
+    - If you need all 10 bits of the conversion result, you would typically use right alignment.
+    - Reading both low and high values in a right-aligned format allows you to capture the entire 10-bit precision of the conversion result.
+2. **Left Alignment:**
+    
+    - If you only need 8 bits of precision, left alignment can be advantageous.
+    - By using left alignment and taking only the high value (most significant bits), you effectively reduce the precision to 8 bits, which might be sufficient for certain applications.
+3. **Advantages of Left Alignment:**
+    
+    - Left alignment can provide an advantage in terms of memory usage. By taking only the most significant byte of the register (high value), you use less memory compared to storing the entire 10-bit result.
+    - This can be particularly useful when you have RAM constraints and need to store a large number of samples. Using only the necessary bits helps conserve memory.
+4. **Advantages of Right Alignment:**
+    
+    - Right-justified values can be used directly without the scaling that a left-justified value might require.
+    - If you need the full precision of the A/D conversion result and don't have memory constraints, right alignment allows you to work directly with the entire 10-bit value.
+
+If the measured voltages are close to 0 then right align will be better but if the values are closer to 5v then left will be better. But generally the left align will have the closes accuracy to the value
 
 Example:
 Write a c program to configure the ADC as follows:

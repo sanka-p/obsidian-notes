@@ -165,6 +165,7 @@ Edge classification in DFS
 
 ## Minimum Spanning Tree
 ### Prims Algorithms
+Its a greedy algorithm
 Procedure:
 - Select any vertex and chose the edge of smallest weight from it.
 - At each stage, choose the edge of smallest weight joining a vertex already included to a vertex not yet included
@@ -173,14 +174,44 @@ Procedure:
 ```
 Prim(G, w, r)
 	Q = V[G]
+	// O(V)
 	for each u in Q
 		key[u] = ∞
 	key[r] = 0
 	p[r] = NULL
-	while (Q no empty)
+	// O(V) as each node is processed once
+	while (Q not empty)
+		// O(logV)
 		u = ExtractMin(Q)
+		// O(E) - worst case all vertices are connected to u
 		for each v in adj[u]
+			// v in Q checks if it is visited
 			if (v in Q and w(u, v) < key[v])
 				p[v] = u
 				key[v] = w(u, v)
 ```
+
+The running time will depend on the queue
+- Binary heap: $O(ElogV)$
+- Fibonacci heap: O(VlogV + E)
+
+In graphs with negative weight cycles some shortest paths will not exist. Explain why? 
+This is due to the fact that negative weight cycles can lead to infinitely decreasing paths, causing issues with the well-defined nature of shortest paths.
+
+### Dijkstra's Algorithm
+```
+Dijkstra(G)
+	for each v in V
+		d[v] = ∞
+	d[s] = 0
+	Q = V
+	while (Q is not null)
+		u = ExtractMin(Q)
+		for each v in u->Adj[]
+			if (d[v] > d[u]+w(u,v))
+			d[v] = d[u]+w(u, v)
+```
+
+The running time will depend on the queue
+- Binary heap: $O(ElogV)$
+- Fibonacci heap: O(VlogV + E)

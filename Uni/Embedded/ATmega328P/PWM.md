@@ -15,6 +15,11 @@
 		![[Pasted image 20240116232602.png]]
 	- Phase Correct PWM - Timer counts up and down between 0 and TOP
 		![[Pasted image 20240116232737.png]]
+		 the Output Compare (OC0x) is cleared
+on the compare match between TCNT0 and OCR0x while upcounting, and set on the compare match while
+downcounting  The dual-slope operation has lower
+maximum operation frequency than single slope operation. However, due to the symmetric feature of the dual-
+slope PWM modes, these modes are preferred for motor control applications why this?? (but I know center aligned pwm produces less current harmonics on a dc motor #TODO What mean this?
 - Fast PWM
 	- When TCNTn <= OCRnA/B, OCOn is high
 	- When TCNTn > OCRnA/B, OCOn is low

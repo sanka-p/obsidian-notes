@@ -31,7 +31,7 @@
 	- **TCCRnA , TCCRnB**- Timer/Counter Control Register A and B
 		![[Pasted image 20231217182223.png]]
 		![[Pasted image 20231217182248.png]]
-		- COMnA1:COMnA0 - Control the Output Compare Pin behavior (OCnA)
+		- COMnA1:COMnA0 - Control the Output Compare Pin behavior (OCnA/B)
 			- Note that the Data Direction Register (DDR) bit corresponding to the OC0A pin must be set in order to enable the output driver
 		- WGMn0, WGMn1 - (Waveform Generation Modes) Timer Modes
 		- CS02:CS00 - Clock Source
