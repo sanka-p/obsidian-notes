@@ -71,7 +71,34 @@ In•
 •
 •
 •
-order for nested interrupt service routines (ISRs) to be executed, the following conditions must be met:
+order for nested interrupt service routines (ISRs) to be executedchar get_key()
+{
+    // set rows as output
+    DDRD |= ((1 << PD6) | (1 << PD7));
+    DDRB |= ((1 << PB0) | (1 << PB1));
+    // set columns as input
+    DDRB &= ~((1 << PB2) | (1 << PB3) | (1 << PB4) | (1 << PB5)); 
+    // set internal pullups on inputs
+    PORTB |= ((1 << PB2) | (1 << PB3) | (1 << PB4) | (1 << PB5));
+
+    for (int row = 0; row < 4; row++){
+        if (row < 2)
+            PORTD = ~(0x40 << row);
+        else
+            PORTB = ~(0x01 << (row - 2));
+
+        for (int col = 0; col < 4; col++)
+        {
+            if (!(PINB & (0x04 << col)))
+            {
+                _delay_ms(200);
+                if (!(PINB & (0x04 << col)))
+                    return keys[row][col];
+            }
+        }
+    }
+    return NO_KEY; // no key pressed
+}, the following conditions must be met:
 Hardware support: The microcontroller must have the capability to handle nested interrupts. This means
 that the microcontroller must have enough interrupt priority levels to allow multiple interrupts to be
 executed simultaneously.

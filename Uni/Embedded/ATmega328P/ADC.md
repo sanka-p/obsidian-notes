@@ -63,6 +63,7 @@ ADC - Converts analog/continous electrical signals to binary/discrete values
 	 - Clock source
 	 - Data conversion method
 	 - Technology used in fabrication: TTL or MOS
+ - Acquisition time or ADC setup time is not included in the conversion time
  - Digital Data Output
 	 - $D_{out} = \frac{V_{in}}{stepsize}$
  - An on chip ADC reduces extra connections needed for and external ADC module
