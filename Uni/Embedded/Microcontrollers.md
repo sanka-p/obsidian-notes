@@ -1,2 +1,0 @@
-- Microcontroller = Microprocessor + Long Term Memory + I/O
-- 

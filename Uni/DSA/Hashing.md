@@ -1,14 +1,17 @@
 ###### Overview
 - Hash Tables
-	- Direct Addressing
 	- Hashing Function
 		- Types
-			- Key size known
-				- Perfect hashing
+			- Key size known (Perfect hashing)
+				- Direct Addressing
 			- Key size unknown
-				- Division Method
-				- Multiplication Method
+				- Static Hashing
+					- Division Method
+					- Multiplication Method
+				- Random Hashing
+					- Universal Hashing
 		- Collision Resolution
+			- Load Factor
 			- Closed Addressing/Chaining
 			- Open Addressing
 				- Methods
@@ -43,6 +46,11 @@
 	- The set of keys actually stored may be so small relative to the number of keys in the range that most of the space allocated for T would be wasted
 
 
+
+If we know all the keys to be stores we can write a perfect hash function. But this cannot be done with inline data. But if the inline data input rate is considerably small then the change in load factor with the perfect hash function created at a certain point in time will be small. Once the load factor exceeds a certain value, rehash and remap to another perfect hash function with the exisiting data
+With chaining can you rehash?
+
+Else, use a BST to reduce worst case to O(logn) lookup
 
 ## Hash Functions
 - The "ideal" hash functions (independent uniform hashing)
@@ -89,7 +97,7 @@ Secondary clustering is less severe, two records do only have the same collision
 
 ### Universal Hashing
 - Randomize the algorithm to combat O(n) worst case
-- Universal hashing - pick a hash function randomly in a way that is independent of the keys that are actually going to be stored. This guarantees goof performance of average, even if worse case keys are chosen
+- Universal hashing - pick a hash function randomly in a way that is independent of the keys that are actually going to be stored. This guarantees good performance of average, even if worse case keys are chosen
 
 ## Chaining
 - Puts elements that hash to the same slot in a linked list
@@ -126,7 +134,13 @@ Types of probing:
 	- Issues
 		- Primary Clustering
 		- Deletion operation in complex since when an element in a cluster is deleted, the probing sequence should be adjusted
+		- If you reach the original index, the table is full and you need to rehash
 - Quadratic Probing - Interval is increased by adding the successive output of a quadratic polynomial to the starting hash value ($H+1^2, H+2^2, H+3^2, H+4^2, ...$)
+In order to guarantee that your quadratic probes will hit every single available spots eventually, your table size must meet these requirements:
+
+- Be a prime number
+- never be more than half full (even by one element)
+
 
 Advantages:
 1. Avoids time overhead of allocating each new entry
@@ -143,4 +157,11 @@ as empty. Search for keys may become incorrect. The classical method to implemen
 deletion is to mark slots in hash table by three values: “free”, “busy”, “deleted”
 ![[Pasted image 20240212205116.png]]
 
+#### Double Hashing
+Double Hashing is works on a similar idea to linear and quadratic probing. Use a big table and hash into it. Whenever a collision occurs, choose another spot in table to put the value. The difference here is that instead of choosing next opening, a second hash function is used to determine the location of the next spot. For example, given hash function H1 and H2 and key. do the following:
 
+- Check location hash1(key). If it is empty, put record in it.
+- If it is not empty calculate hash2(key).
+- check if hash1(key)+hash2(key) is open, if it is, put it in
+- repeat with hash1(key)+2_hash2(key), hash1(key)+3_hash2(key) and so on, until an opening is found.
+In order for the entire hash table to be searched, the value h2.k/ must be relatively prime to the hash-table size m. (See Exercise 11.4-5.) A convenient way to ensure this condition is to let m be an exact power of 2 and to design h2 so that it always produces an odd number. Another way is to let m be prime and to design h2 so that it always returns a positive integer less than m.

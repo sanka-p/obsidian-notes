@@ -122,10 +122,141 @@ FindLargestBST(node)
 To find requested node - binary search
 recursive
 ```
-BinarySearchBST(node, key)
+RecursiveSearchBST(node, key)
 	if node == null return null
 	else if node == key return node
 	else if key < node BinarySearchBST(node.left, key)
 	else BinarySearchBST(node.right, key)
 ```
 iterative
+```
+InterativeSearchBST(node, key)
+	current_node = node
+	while current_node != null
+	  if key == node
+	    return node
+	  else if key < current_node
+	    current_node = current_node.left
+	  else
+	    current_node = current_node.right
+```
+
+Insertion
+```
+AddBST(root, value)
+  if root == null
+    root <= new node
+    root->value = value
+  else if value <root->key
+    AddBST(root->left, value)
+  else
+    AddBST(root->right, value)
+```
+Order of insertion of elements into a BST matters
+![[Pasted image 20240213182505.png]]
+To avoid the imbalance use self balancing trees such as
+For a BST with n nodes
+Average height is $O(logn)$
+Worst Case is $O(n)$
+Hence come up with a balance condition that preserves O(logn) height For example:
+1. left and right subtrees of the root have equal number of nodes
+2. left and right subtrees of the root have equal height
+3. left and right subtrees of every node have equal number of nodes
+4. left and right subtrees of every node have equal height
+
+Check if the tree is balanced in O(n) time:
+```cpp
+    bool isBalanced(TreeNode* root) {
+        return dfsHeight (root) != -1;
+    }
+
+    int dfsHeight (TreeNode *root) {
+
+        if (root == NULL) return 0;
+        
+        int leftHeight = dfsHeight (root -> left);
+
+        if (leftHeight == -1) 
+            return -1;
+        
+        int rightHeight = dfsHeight (root -> right);
+
+        if (rightHeight == -1) 
+            return -1;
+        
+        if (abs(leftHeight - rightHeight) > 1)  
+            return -1;
+
+        return max (leftHeight, rightHeight) + 1;
+    }
+};
+```
+###### AVL trees
+The balance property is left and right trees of every node have heights differing by at most 1
+for each node we calculate a balance factor:
+balance factor (bf) = height of left subtree - height of right subtree = {-1, 0, 1}
+
+if |bf| > 1 then do rotation on the 3 nodes
+
+AVL find - same as BST find
+AVL insert - same as BST insert but may need to fix the tree after insert. Let x be the node where the imabalance occurs:
+Four cases to consider. The insertion is in the
+1. left subtree of the left child of x
+![[Pasted image 20240213195832.png]]
+![[Pasted image 20240213200350.png]]
+2. right subtree of the left child of x
+![[Pasted image 20240213200001.png]]
+![[Pasted image 20240213200620.png]]
+3. left subtree of the right child of x
+![[Pasted image 20240213200108.png]]
+4. right subtree of the right child of x
+![[Pasted image 20240213200219.png]]
+cases 1&4 are solved by a single rotation
+cases 2&3 are solved by a double rotation
+
+**if multiple nodes gets imbalanced** perform rotation on the first imbalanced ancestor of the inserted node
+
+**to determine the imbalance type (LL/LR/RL/RR)** start from the imbalanced node and move two steps towards the newly inserted node
+![[Pasted image 20240213201035.png]]
+###### Red Black trees
+
+
+Deletion
+if leaf remove it;
+if one child, delete node and replace with subtree (since all subtrees a BSTs the BST rules will be preserved)
+if two children, two options:
+- replace with minimum from right subtreethis minimum value will either be a 
+	- leaf - delete it 
+	- node with one parent - replace it
+Why the minimum from right?
+- It will be greater than the value im trying to replace so it will be greater than anything on the left subtree
+- Since it is the minimum from the right it will smaller than everything on the right subtree
+Rules are preserved!!
+- replace with max in left subtree
+```
+DeleteNode(root, value)
+// should return the node since it might change
+  if root == null return root
+  else if(value < root->value) root.left  = DeleteNode(root.left)
+  else root.right = DeleteNode(root.right)
+
+  // case 1: no child
+  if (root.left == null && root.right == null)
+	delete root
+	root = null
+  // case 2.1: one child (left)
+  else if (root->left == null)
+	  root <= root->right
+  // case 2.1: one child (left)
+  else if (root->right == null)
+	  root <= root->left
+	  
+  // case 3: two children (method 1)
+  else
+	  temp = FindMin(root->right)
+	  root->data = temp->data
+	  root->right = Delete(root->right, temp->data) 
+  return root
+  
+```
+https://gist.github.com/mycodeschool/9465a188248b624afdbf

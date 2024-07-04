@@ -8,6 +8,6 @@
   "attachmentFolderPath": "./attachments",
   "spellcheck": false,
   "newFileLocation": "current",
-  "vimMode": false,
+  "vimMode": true,
   "alwaysUpdateLinks": true
 }

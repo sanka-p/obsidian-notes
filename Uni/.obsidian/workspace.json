@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "98a15624f661dcfd",
+        "id": "08cabb7b574b0700",
         "type": "tabs",
         "children": [
           {
-            "id": "9ce5a47f04932df2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Embedded/ATmega328P/Sensors + Actuators.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d99177a3487815bd",
+            "id": "8345a609ec2be0cc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -30,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "5a2512b301169e3f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Embedded/ATmega328P/RS232.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,54 +146,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d99177a3487815bd",
+  "active": "8345a609ec2be0cc",
   "lastOpenFiles": [
-    "DSA/Graph Theory/attachments/Pasted image 20240213180833.png",
-    "DSA/Graph Theory/attachments/Pasted image 20240213180421.png",
-    "DSA/Hashing.md",
-    "DSA/attachments/Pasted image 20240212205116.png",
-    "Embedded/ATmega328P/Sensors + Actuators.md",
-    "Embedded/ATmega328P/SPI (Serial Peripheral Interface).md",
-    "Embedded/ATmega328P/RS232.md",
-    "Embedded/ATmega328P/Serial.md",
-    "Embedded/ATmega328P/ADC.md",
-    "Embedded/ATmega328P/PWM.md",
-    "Embedded/ATmega328P/Interrupts.md",
-    "Embedded/ATmega328P/Timers.md",
-    "Embedded/ATmega328P/attachments/Pasted image 20240211220249.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20240211215600.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20240211215300.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20240211215209.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20240211141127.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20240211140858.png",
     "DSA/Graph Theory/Introduction.md",
-    "Embedded/ATmega328P/attachments/Pasted image 20240211135745.png",
-    "Embedded/ATmega328P/attachments/Pasted image 20240211135722.png",
-    "Embedded/ATmega328P/EEPROM (Electrically Erasable Read-Only Memory).md",
     "DSA/Graph Theory/Trees.md",
-    "DSA/Graph Theory/attachments",
-    "Networking/Firewall.md",
+    "Embedded/ATmega328P/RS232.md",
+    "Operating Systems/OS Structures.md",
+    "Operating Systems/Introduction.md",
+    "Untitled/Vim.md",
+    "Guides/Latex.md",
+    "Embedded/USB.md",
+    "Huberman Notes.md",
+    "PCB/Resources.md",
+    "PCB/Index.md",
     "Embedded/ATmega328P/I2C (Inter Integrated Circuit).md",
-    "Embedded/ATmega328P/Serial Past Papers.md",
-    "Networking/Link Layer.md",
-    "DSA/Data Structures/Introduction.md",
+    "PCB",
+    "Embedded/ATmega328P/Serial.md",
+    "Image Processing/Fundamentals.md",
+    "Image Processing/attachments/Pasted image 20240326110934.png",
+    "Image Processing/attachments",
+    "Guides/Untitled 1.md",
+    "Image Processing",
+    "Operating Systems/attachments/Pasted image 20240325101441.png",
+    "Operating Systems/attachments",
+    "Embedded/FPGAs/Introduction.md",
+    "Operating Systems",
+    "Embedded/FPGAs/attachments/Pasted image 20240321022351.png",
+    "Embedded/FPGAs/attachments/Pasted image 20240321022022.png",
+    "Embedded/FPGAs/attachments",
+    "Embedded/ATmega328P/Microcontrollers.md",
+    "Embedded/FPGAs",
+    "Embedded/ATmega328P/Sensors + Actuators.md",
+    "Security/Introduction.md",
+    "Security/End Paper Questions.md",
+    "Security/Cryptography/Vigenere Cipher.md",
+    "Security/Cryptography/Transposition Ciphers.md",
+    "Security/Cryptography/Traditional Ciphers.md",
+    "Security/Cryptography/Substitution Ciphers.md",
+    "Security/Cryptography/Stream Ciphers.md",
+    "Security/Cryptography/Playfair Cipher.md",
+    "Security/attachments/Pasted image 20240220203504.png",
+    "Networking/attachments/Pasted image 20240215220847.png",
+    "Networking/attachments/Pasted image 20240215220731.png",
+    "Networking/attachments/Pasted image 20240215220657.png",
+    "Networking/attachments/Pasted image 20240215220513.png",
+    "Networking/attachments/Pasted image 20240215191855.png",
+    "DSA/Graph Theory/attachments",
     "DSA/Graph Theory",
-    "Web Dev/RPC (Remote Procedure Call).md",
-    "Networking/Transport Layer.md",
-    "Networking/Untitled.md",
-    "Embedded/ATmega328P/ATmega328P.md",
-    "Product Specs/Wheel Attachment.md",
     "Product Specs",
-    "Electronics/Filters/Butterworth Function.md",
-    "Electronics/Filters/Low Pass Filters.md",
-    "Electronics/Filters/Introduction.md",
-    "Electronics/Filters/attachments",
-    "Electronics/Filters",
-    "Untitled",
-    "Networking/attachments",
-    "Web Dev",
-    "Guides/Docker",
-    "Guides",
     "Untitled.canvas"
   ]
 }

@@ -148,6 +148,31 @@ DFS_visit(u)
 ```
 Time complexity: $O(V+E)$
 - DFS_visit runs once per edge in a directed graph and twice in an undirected graph
+
+DFS on adjacency matrix takes $O(V^2)$. This is because for each vertex, we need to iterate through all the other vertices to check if they are adjacent or not.
+```c
+void dfs(int start, vector<bool>& visited)
+{
+ 
+    // Print the current node
+    cout << start << " ";
+ 
+    // Set current node as visited
+    visited[start] = true;
+ 
+    // For every node of the graph
+    for (int i = 0; i < adj[start].size(); i++) {
+ 
+        // If some node is adjacent to the current node
+        // and it has not already been visited
+        if (adj[start][i] == 1 && (!visited[i])) {
+            dfs(i, visited);
+        }
+    }
+}
+```
+
+
 Edge classification in DFS
 - Tree Edge
 	- During DFS edges that allows us to discover unvisited edges
@@ -215,3 +240,5 @@ Dijkstra(G)
 The running time will depend on the queue
 - Binary heap: $O(ElogV)$
 - Fibonacci heap: O(VlogV + E)
+
+Floyd Warshall
